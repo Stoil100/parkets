@@ -1,10 +1,10 @@
 import {
-  isRouteErrorResponse,
-  Links,
-  Meta,
-  Outlet,
-  Scripts,
-  ScrollRestoration,
+    isRouteErrorResponse,
+    Links,
+    Meta,
+    Outlet,
+    Scripts,
+    ScrollRestoration,
 } from 'react-router'
 
 import type { Route } from './+types/root'
@@ -37,7 +37,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
                 <Meta />
                 <Links />
             </head>
-            <body>
+            <body className="max-w-screen font-cormac h-fit overflow-x-hidden box-border w-full relative">
                 <Navigation />
                 {children}
                 <ScrollRestoration />
