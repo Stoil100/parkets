@@ -1,3 +1,6 @@
+import HeroSection from '~/components/pages/home/Hero'
+import ServicesSection from '~/components/pages/home/Services'
+import VideoSection from '~/components/pages/home/Video'
 import type { Route } from './+types/home'
 
 export function meta({}: Route.MetaArgs) {
@@ -8,5 +11,11 @@ export function meta({}: Route.MetaArgs) {
 }
 
 export default function Home() {
-    return <main></main>
+    return (
+        <main>
+            <HeroSection />
+            <VideoSection />
+            <ServicesSection />
+        </main>
+    )
 }
