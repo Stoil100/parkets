@@ -2,11 +2,12 @@
 
 import Autoplay from 'embla-carousel-autoplay'
 import { useEffect, useState } from 'react'
+import MainButton from '~/components/MainButton'
 import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-  type CarouselApi,
+    Carousel,
+    CarouselContent,
+    CarouselItem,
+    type CarouselApi,
 } from '~/components/ui/carousel'
 
 export default function HeroSection() {
@@ -86,9 +87,7 @@ export default function HeroSection() {
                             дълготрайност, превръщайки всяко пространство в
                             модерно и уникално място с характер.
                         </p>
-                        <button className="bg-white text-gray-900 px-8 py-3 rounded-full font-semibold hover:bg-gray-100 transition-colors">
-                            СВЪРЖИ СЕ С НАС
-                        </button>
+                        <MainButton>СВЪРЖИ СЕ С НАС</MainButton>
                     </div>
 
                     {/* Happy Clients - Bottom */}
