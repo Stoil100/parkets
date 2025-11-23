@@ -17,11 +17,11 @@ export function ServiceCard({ image, title, description }: ServiceCardProps) {
             />
 
             {/* Overlay Card */}
-            <div className="absolute bottom-0 left-0 right-0 bg-white rounded-lg p-6 m-4 shadow-lg group-hover:bg-white/20 transition-colors">
-                <h3 className="text-lg font-bold text-gray-900 mb-2 group-hover:text-white">
+            <div className="absolute bottom-0 left-0 right-0 bg-forest rounded-lg p-6 m-4 shadow-lg group-hover:bg-white/10 transition-colors">
+                <h3 className="text-lg font-bold text-golden mb-2 group-hover:text-white group-hover:blur-xs">
                     {title}
                 </h3>
-                <p className="text-sm text-gray-600 leading-relaxed group-hover:text-white">
+                <p className="text-sm text-white leading-relaxed group-hover:blur-xs">
                     {description}
                 </p>
             </div>
