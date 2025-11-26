@@ -1,5 +1,5 @@
-import { Link } from '../Link'
-import MainButton from '../MainButton'
+import { Link } from './Link'
+import MainButton from './MainButton'
 
 export default function Navigation() {
     return (
