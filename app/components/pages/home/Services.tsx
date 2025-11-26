@@ -9,14 +9,11 @@ interface ServiceCardProps {
 export function ServiceCard({ image, title, description }: ServiceCardProps) {
     return (
         <div className="relative h-80 rounded-2xl overflow-hidden group">
-            {/* Background Image */}
             <img
                 src={image || '/placeholder.svg'}
                 alt={title}
                 className="w-full h-full object-cover"
             />
-
-            {/* Overlay Card */}
             <div className="absolute bottom-0 left-0 right-0 bg-forest rounded-lg p-6 m-4 shadow-lg group-hover:bg-white/10 transition-colors">
                 <h3 className="text-lg font-bold text-golden mb-2 group-hover:text-white group-hover:blur-xs">
                     {title}
@@ -32,24 +29,24 @@ export function ServiceCard({ image, title, description }: ServiceCardProps) {
 export default function ServicesSection() {
     const services = [
         {
-            image: '/images/services1.jpg',
+            image: '/images/services/1.jpg',
             title: 'Епоксидни настилки',
             description:
                 'Издръжливи и модерни решения за гаражи, паркинги и индустриални помещения.',
         },
         {
-            image: '/images/services2.jpg',
+            image: '/images/services/2.jpg',
             title: 'Хидроизолация и външни покрития',
             description:
                 'Защита на фасади, тераси и басейни с качествени материали.',
         },
         {
-            image: '/images/services3.jpg',
+            image: '/images/services/3.jpg',
             title: 'Декоративни мазилки',
             description: 'Подчертаме индивидуалността на интериора си.',
         },
         {
-            image: '/images/services4.jpg',
+            image: '/images/services/4.jpg',
             title: 'Интериорно боядисване и дизайн',
             description:
                 'Професионално боядисване на домове, офиси и хотели с финализ към детайла.',
