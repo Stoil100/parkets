@@ -172,15 +172,31 @@ body {
   }
 }
 
+.marquee-track {
+  display: flex;
+  width: max-content;
+  /* width = content width, not parent */
+  animation: marquee 15s linear infinite;
+  /* adjust speed here */
+  will-change: transform;
+}
+
+.marquee-item {
+  font-family: var(--font-webserveroff);
+  text-transform: uppercase;
+  font-size: 6rem;
+  /* ~ text-8xl */
+  color: var(--golden, #e8bc80);
+  white-space: nowrap;
+}
+
 @keyframes marquee {
   0% {
     transform: translateX(0);
   }
-  100% {
-    transform: translateX(-33.333%);
-  }
-}
 
-.animate-marquee {
-  animation: marquee 20s linear infinite;
+  100% {
+    /* move left by exactly half the track (because we have 2 copies) */
+    transform: translateX(-50%);
+  }
 }
