@@ -9,7 +9,7 @@ import {
 
 import type { Route } from './+types/root'
 import './app.css'
-import Navigation from './components/navigation/Navigation'
+import Navigation from './components/global/Navigation'
 import './i18n'
 
 export const links: Route.LinksFunction = () => [
