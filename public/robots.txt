@@ -1,0 +1,13 @@
+# robots.txt for https://royal-decorators.com
+
+User-agent: *
+Disallow: /wp-admin/
+Allow: /wp-admin/admin-ajax.php
+
+# If you have any private, staging or test directories, add them here
+# Example:
+# Disallow: /private/
+# Disallow: /test/
+
+# Sitemap — update the path if your sitemap URL differs
+Sitemap: https://royal-decorators.com/sitemap.xml
