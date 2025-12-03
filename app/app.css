@@ -176,7 +176,7 @@ body {
   display: flex;
   width: max-content;
   /* width = content width, not parent */
-  animation: marquee 15s linear infinite;
+  animation: marquee 30s linear infinite;
   /* adjust speed here */
   will-change: transform;
 }
