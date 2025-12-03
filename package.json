@@ -10,9 +10,10 @@
   },
   "dependencies": {
     "@radix-ui/react-navigation-menu": "^1.2.14",
-    "@radix-ui/react-slot": "^1.2.3",
+    "@radix-ui/react-slot": "^1.2.4",
     "@react-router/node": "^7.9.2",
     "@react-router/serve": "^7.9.2",
+    "@vercel/react-router": "^1.2.3",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "embla-carousel-autoplay": "^8.6.0",
