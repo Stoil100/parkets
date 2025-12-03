@@ -2,7 +2,7 @@
 
 import Autoplay from 'embla-carousel-autoplay'
 import { useEffect, useState } from 'react'
-import MainButton from '~/components/MainButton'
+import MainButton from '~/components/global/MainButton'
 import {
     Carousel,
     CarouselContent,
