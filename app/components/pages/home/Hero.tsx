@@ -1,44 +1,44 @@
-'use client'
+'use client';
 
-import Autoplay from 'embla-carousel-autoplay'
-import { useEffect, useState } from 'react'
-import MainButton from '~/components/global/MainButton'
+import Autoplay from 'embla-carousel-autoplay';
+import { useEffect, useState } from 'react';
+import MainButton from '~/components/global/MainButton';
 import {
     Carousel,
     CarouselContent,
     CarouselItem,
     type CarouselApi,
-} from '~/components/ui/carousel'
+} from '~/components/ui/carousel';
 
 export default function HeroSection() {
-    const [api, setApi] = useState<CarouselApi>()
-    const [current, setCurrent] = useState(0)
-    const [isHovered, setIsHovered] = useState(false)
+    const [api, setApi] = useState<CarouselApi>();
+    const [current, setCurrent] = useState(0);
+    const [isHovered, setIsHovered] = useState(false);
 
     const images = [
         '/images/heroOverlay1.jpeg',
         '/images/heroOverlay1.jpeg',
         '/images/heroOverlay1.jpeg',
         '/images/heroOverlay1.jpeg',
-    ]
+    ];
 
     useEffect(() => {
-        if (!api) return
+        if (!api) return;
 
-        setCurrent(api.selectedScrollSnap())
+        setCurrent(api.selectedScrollSnap());
 
         api.on('select', () => {
-            setCurrent(api.selectedScrollSnap())
-        })
-    }, [api])
+            setCurrent(api.selectedScrollSnap());
+        });
+    }, [api]);
 
     const scrollTo = (index: number) => {
-        api?.scrollTo(index)
-    }
+        api?.scrollTo(index);
+    };
 
     return (
         <div
-            className="relative w-screen h-screen overflow-hidden"
+            className="relative w-full h-screen overflow-hidden"
             onMouseEnter={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}
         >
@@ -58,27 +58,28 @@ export default function HeroSection() {
                 <CarouselContent className="h-screen m-0">
                     {images.map((src, index) => (
                         <CarouselItem key={index} className="p-0">
-                            <div className="relative w-screen h-screen">
+                            <div className="relative w-full h-screen">
                                 <img
                                     src={src || '/placeholder.svg'}
                                     alt={`Slide ${index + 1}`}
-                                    className="w-full h-full object-cover object-bottom"
+                                    className="w-full h-full object-cover object-center"
                                 />
+                                <div className="absolute inset-0 bg-black/40 md:bg-black/30" />
                             </div>
                         </CarouselItem>
                     ))}
                 </CarouselContent>
 
                 {/* Hero Content Overlay */}
-                <div className="absolute inset-0 z-10 flex flex-col items- px-6 md:px-12 lg:px-32">
+                <div className="absolute inset-0 z-10 flex flex-col items-center px-4 sm:px-6 md:px-12 lg:px-32">
                     {/* Main Content - Centered */}
-                    <div className="flex-1 flex flex-col items-center md:items-start justify-center max-md:text-center max-w-4xl">
-                        <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
+                    <div className="flex-1 flex flex-col items-center md:items-start justify-center text-center md:text-left max-w-4xl pt-20 md:pt-0">
+                        <h1 className="text-2xl sm:text-3xl md:text-5xl lg:text-6xl font-bold text-white mb-4 md:mb-6 leading-tight text-balance">
                             Подови решения и декоративни покрития с
                             професионално качество.
                         </h1>
-                        <p className="text-base md:text-lg text-white/90 mb-8 leading-relaxed">
-                            <span className="font-semibold">
+                        <p className="text-sm sm:text-base md:text-lg text-white/90 mb-6 md:mb-8 leading-relaxed max-w-2xl md:max-w-none">
+                            <span className="font-semibold text-golden">
                                 Royal Decorators
                             </span>{' '}
                             предлага висококачествени епоксидни подове,
@@ -91,27 +92,27 @@ export default function HeroSection() {
                     </div>
 
                     {/* Happy Clients - Bottom */}
-                    <div className=" mb-5 flex items-center md:self-start gap-4">
+                    <div className="hidden mb-16 sm:mb-8 md:flex flex-col sm:flex-row items-center md:self-start gap-2 sm:gap-4">
                         <div className="flex items-center gap-2">
-                            <div className="w-12 h-12 rounded-full bg-white/20 backdrop-blur-sm flex items-center justify-center">
+                            <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-white/20 backdrop-blur-sm flex items-center justify-center">
                                 <span className="text-white text-xs font-semibold">
                                     Logo
                                 </span>
                             </div>
-                            <div className="w-12 h-12 -ml-5 rounded-full bg-white/20 backdrop-blur-sm flex items-center justify-center">
+                            <div className="w-10 h-10 sm:w-12 sm:h-12 -ml-4 sm:-ml-5 rounded-full bg-white/20 backdrop-blur-sm flex items-center justify-center">
                                 <span className="text-white text-xs font-semibold">
                                     Logo
                                 </span>
                             </div>
                         </div>
-                        <p className="text-white/80 text-sm font-medium tracking-wider">
+                        <p className="text-white/80 text-xs sm:text-sm font-medium tracking-wider">
                             ДОВОЛНИ КЛИЕНТИ
                         </p>
                     </div>
                 </div>
 
                 {/* Dot Navigation */}
-                <div className="absolute bottom-8 left-1/2 -translate-x-1/2 z-10">
+                <div className="absolute bottom-12 md:bottom-24 sm:bottom-8 left-1/2 -translate-x-1/2 z-10">
                     <div
                         className={`flex items-center gap-3 px-4 py-2 rounded-full transition-all duration-300 ${
                             isHovered ? 'bg-black/50' : 'bg-transparent'
@@ -133,5 +134,5 @@ export default function HeroSection() {
                 </div>
             </Carousel>
         </div>
-    )
+    );
 }
