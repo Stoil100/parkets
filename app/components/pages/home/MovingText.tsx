@@ -1,7 +1,6 @@
-import React from 'react'
 
 const text =
-    'Royal Decorators | Прецизност, Стил, Съвършенство • Royal Decorators | Прецизност, Стил, Съвършенство • '
+    'Royal Decorators | Прецизност, Стил, Съвършенство • Royal Decorators | Прецизност, Стил, Съвършенство • ';
 
 export default function MovingTextSection() {
     return (
@@ -14,5 +13,5 @@ export default function MovingTextSection() {
                 </span>
             </div>
         </div>
-    )
+    );
 }
