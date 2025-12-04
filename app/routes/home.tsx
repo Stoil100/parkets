@@ -6,6 +6,7 @@ import { ConsultationSection } from '~/components/pages/home/Consultation'
 import MovingTextSection from '~/components/pages/home/MovingText'
 import { BenefitsSection } from '~/components/pages/home/Benefits'
 import { SolutionsSection } from '~/components/pages/home/Solutions'
+import { ParallaxSection } from '~/components/pages/home/Parallax'
 
 export function meta({}: Route.MetaArgs) {
     return [
@@ -18,6 +19,7 @@ export default function Home() {
     return (
         <main>
             <HeroSection />
+            <ParallaxSection />
             <ConsultationSection />
             <MovingTextSection />
             <VideoSection />
