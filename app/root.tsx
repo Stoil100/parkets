@@ -9,6 +9,7 @@ import {
 
 import type { Route } from './+types/root';
 import './app.css';
+import { Footer } from './components/global/Footer';
 import Navigation from './components/global/Navigation';
 import './i18n';
 
@@ -40,6 +41,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
             <body className="max-w-screen font-cormac h-fit overflow-x-hidden box-border w-full relative">
                 <Navigation />
                 {children}
+                <Footer />
                 <ScrollRestoration />
                 <Scripts />
             </body>
