@@ -189,6 +189,12 @@ body {
   color: var(--golden, #e8bc80);
   white-space: nowrap;
 }
+@media (max-width: 768px) {
+  .marquee-item {
+    font-size: 3rem;
+    /* ~ text-4xl */
+  }
+}
 
 @keyframes marquee {
   0% {
