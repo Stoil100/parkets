@@ -23,7 +23,7 @@ export default function VideoSection() {
                         {/* Maintain generous height while staying responsive */}
                         <div className="flex items-center justify-center text-center text-neutral-500 text-sm sm:text-base md:px-6 h-[46vh] md:h-[52vh] lg:h-[58vh]">
                             Тук ще има видео, ще видя по-нататък как точно, ще
-                            го сглобииим
+                            го сглобим
                         </div>
                     </div>
                 </div>
