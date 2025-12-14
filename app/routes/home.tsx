@@ -7,6 +7,7 @@ import MovingTextSection from '~/components/pages/home/MovingText'
 import { BenefitsSection } from '~/components/pages/home/Benefits'
 import { SolutionsSection } from '~/components/pages/home/Solutions'
 import { ParallaxSection } from '~/components/pages/home/Parallax'
+import InstagramSection from '~/components/pages/home/Instagram'
 
 export function meta({}: Route.MetaArgs) {
     return [
@@ -26,6 +27,7 @@ export default function Home() {
             <SolutionsSection />
             <ServicesSection />
             <BenefitsSection />
+            <InstagramSection/>
         </main>
     )
 }
