@@ -10,12 +10,12 @@ export default function VideoSection() {
                         <br />в съвършенство
                     </h1>
 
-                    <p className="text-sm sm:text-base leading-relaxed text-neutral-700 max-w-md">
-                        Royal Decorators съчетава стил, прецизност и модерни
-                        технологии, за да придаде елегантност и характер на
-                        всеки дом, офис или търговски обект.
-                    </p>
-                </div>
+          <p className="text-sm sm:text-base leading-relaxed text-neutral-700 max-w-md">
+            Royal Decorators съчетава стил, прецизност и модерни технологии, за
+            да придаде елегантност и характер на всеки дом, офис или търговски
+            обект.
+          </p>
+        </div>
 
                 {/* Large rounded media/card area */}
                 <div className="mt-6 md:mt-12 lg:mt-14">

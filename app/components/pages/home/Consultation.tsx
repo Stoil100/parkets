@@ -11,7 +11,7 @@ interface ConsultationSectionProps {
 }
 
 export const ConsultationSection: React.FC<ConsultationSectionProps> = ({
-    className,
+  className,
 }) => {
     return (
         <section
@@ -41,22 +41,19 @@ export const ConsultationSection: React.FC<ConsultationSectionProps> = ({
                                 Експерти в декоративните и подови покрития
                             </Badge>
 
-                            <h2 className="text-3xl font-semibold leading-tight text-gray-900 sm:text-4xl">
-                                Консултация и избор на
-                                <span className="block">
-                                    перфектното покритие
-                                </span>
-                            </h2>
+              <h2 className="text-3xl font-semibold leading-tight text-gray-900 sm:text-4xl">
+                Консултация и избор на
+                <span className="block">перфектното покритие</span>
+              </h2>
 
-                            <p className="text-sm leading-relaxed text-gray-700 sm:text-base">
-                                <span className="font-semibold text-golden">
-                                    Royal Decorators
-                                </span>{' '}
-                                предоставя възможност на клиентите да се
-                                запознаят с разнообразието от декоративни
-                                мазилки, епоксидни настилки и букле клас боя,
-                                които предлагаме за проекти от всякакъв тип.
-                            </p>
+              <p className="text-sm leading-relaxed text-gray-700 sm:text-base">
+                <span className="font-semibold text-golden">
+                  Royal Decorators
+                </span>{" "}
+                предоставя възможност на клиентите да се запознаят с
+                разнообразието от декоративни мазилки, епоксидни настилки и
+                букле клас боя, които предлагаме за проекти от всякакъв тип.
+              </p>
 
                             <p className="max-md:hidden text-sm leading-relaxed text-gray-700 sm:text-base">
                                 По време на консултацията обсъждаме бюджета,
