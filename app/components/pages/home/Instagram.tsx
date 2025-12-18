@@ -105,7 +105,7 @@ export function InstagramHeader() {
                     {/* Follow button */}
                     <div className="w-full sm:w-auto flex justify-center sm:justify-end">
                         <Link
-                            href="https://www.instagram.com/countryfloors"
+                            href="https://www.instagram.com/royal_decorators_bg/"
                             target="_blank"
                             rel="noreferrer"
                             className="inline-flex w-full sm:w-auto items-center justify-center rounded-lg bg-[#0095F6] px-8 py-2.5 text-sm font-semibold text-white hover:bg-[#0081d6] transition-colors"
