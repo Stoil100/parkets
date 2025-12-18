@@ -16,14 +16,14 @@ const serviceAreas = [
 
 export function Footer() {
     return (
-        <footer className="bg-[#2a2118] text-golden max-w-7xl mx-auto rounded-t-4xl">
+        <footer className="bg-[#2a2118] w-full text-golden rounded-t-4xl bg-[url('/footer.png')] bg-repeat bg-bottom bg-contain">
             <div className="max-w-4xl mx-auto px-6 py-10 text-center">
                 {/* Logo Section */}
-                <div className="flex flex-col items-center mb-6">
+                <div className="flex flex-col items-center mb-6 ">
                     <img
                         src="/logo_text.png"
                         alt="Royal Decorators Logo"
-                        className="h-16"
+                        className="h-16 px-2 backdrop-blur-xs rounded-xl"
                     />
                 </div>
 

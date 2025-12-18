@@ -38,10 +38,11 @@ export function Layout({ children }: { children: React.ReactNode }) {
                 <Meta />
                 <Links />
             </head>
-            <body className="max-w-screen font-cormac h-fit overflow-x-hidden box-border w-full relative">
+            <body className="min-h-screen flex flex-col font-cormac overflow-x-hidden box-border">
                 <Navigation />
-                {children}
+                <div className="flex-1 w-full">{children}</div>
                 <Footer />
+
                 <ScrollRestoration />
                 <Scripts />
             </body>

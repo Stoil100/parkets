@@ -22,8 +22,14 @@ export default function VideoSection() {
                     <div className="rounded-3xl border border-neutral-300/70 shadow-[0_0_0_1px_rgba(0,0,0,0.02)_inset] bg-white/40 backdrop-blur-0">
                         {/* Maintain generous height while staying responsive */}
                         <div className="flex items-center justify-center text-center text-neutral-500 text-sm sm:text-base md:px-6 h-[46vh] md:h-[52vh] lg:h-[58vh]">
-                            Тук ще има видео, ще видя по-нататък как точно, ще
-                            го сглобим.
+                            <video
+                                src="/videos/test.mp4"
+                                autoPlay
+                                muted
+                                loop
+                                playsInline
+                                className="w-full h-full object-cover rounded-xl"
+                            />
                         </div>
                     </div>
                 </div>
