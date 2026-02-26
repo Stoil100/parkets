@@ -1,5 +1,457 @@
 {
-  "HomePage": {
-    "title": "Hello world!"
-  }
+    "Pages": {
+        "Home": {
+            "Hero": {
+                "title": "Flooring solutions and decorative coatings with professional quality.",
+                "subtitle": "offers high-quality epoxy floors, decorative plasters, and integrated painting services throughout Bulgaria. We combine precision, style, and durability, transforming every space into a modern and unique place with character.",
+                "contact": "Contact us",
+                "happyClients": "Satisfied clients"
+            },
+            "Parallax": {
+                "title": "Spaces transformed into art",
+                "subtitle": "Real projects created with attention to every detail."
+            },
+            "Consultation": {
+                "badge": "Free consultation",
+                "title": {
+                    "main": "Consultation and selection of",
+                    "highlight": "the perfect finish"
+                },
+                "description1": "provides clients with the opportunity to explore the variety of decorative plasters, epoxy flooring systems, and boucle-class paint we offer. Our experts will help you choose the most suitable solution for your project, considering your needs, style, and budget.",
+                "description2": "During the consultation, we discuss the budget, goals, techniques, and requirements in order to select the most suitable solution for your space.",
+                "description3": {
+                    "beginning": "Every project is planned ",
+                    "highlight": "individually – in accordance with your preferences, deadlines, and budget ",
+                    "end": ". Our goal is not just to complete a task, but to create surfaces that impress and stand the test of time."
+                }
+            },
+            "MovingText": "Precision, Style, Perfection",
+            "Video": {
+                "title": {
+                    "beginning": "We transform spaces",
+                    "end": "into perfection"
+                },
+                "description": "Royal Decorators combines style, precision, and modern technologies to bring elegance and character to every home, office, or commercial property."
+            },
+            "Solutions": {
+                "title": "Explore our premium solutions",
+                "solution1": "Epoxy flooring",
+                "solution2": "Waterproofing",
+                "solution3": "Interior painting"
+            },
+            "Services": {
+                "title": "Our services",
+                "description": "We redefine standards in interior solutions through innovation, precision, and style.",
+                "service1": {
+                    "title": "Epoxy flooring",
+                    "description": "Durable and modern solutions for garages, parking areas, and industrial spaces."
+                },
+                "service2": {
+                    "title": "Waterproofing and exterior coatings",
+                    "description": "Protection for facades, terraces, and pools using high-quality materials."
+                },
+                "service3": {
+                    "title": "Decorative plasters",
+                    "description": "We highlight the individuality of your interior."
+                },
+                "service4": {
+                    "title": "Interior painting and design",
+                    "description": "Professional painting of homes, offices, and hotels with attention to detail."
+                }
+            },
+            "Benefits": {
+                "title": "What you get with",
+                "description": "With innovation, precision, and attention to detail, we transform every space into a long-lasting and elegant environment.",
+                "benefit1": {
+                    "title": "Guaranteed quality",
+                    "description": "We use only high-quality materials and techniques for long-lasting results."
+                },
+                "benefit2": {
+                    "title": "Professional execution",
+                    "description": "Quality control at every stage and a clean working environment."
+                },
+                "benefit3": {
+                    "title": "Design consultation",
+                    "description": "Advice on colors, textures, and style tailored to your interior."
+                },
+                "benefit4": {
+                    "title": "Transparent quotes",
+                    "description": "Clear specifications and pre-planned deadlines."
+                },
+                "benefit5": {
+                    "title": "Flexible scheduling",
+                    "description": "Work according to a plan convenient for you, including outside business hours."
+                },
+                "benefit6": {
+                    "title": "Support and assistance",
+                    "description": "Guidance on proper use and maintenance of coatings after installation."
+                },
+                "benefit7": {
+                    "title": "Real results",
+                    "description": "Portfolio of projects and clients proud of their spaces."
+                },
+                "benefit8": {
+                    "title": "Free consultation",
+                    "description": "Personalized solutions tailored to your needs and style."
+                }
+            },
+            "Instagram": {
+                "title": {
+                    "beginning": "Discover more transformations",
+                    "end": "on our Instagram profile!"
+                }
+            }
+        },
+        "Articles": {
+            "title": "Articles",
+            "noArticlesFound": "No articles found."
+        },
+        "Contact": {
+            "title": "Contact Us",
+            "description": {
+                "beginning": "Are you interested in our professional flooring services? ",
+                "middle": "Fill out the inquiry form and we will contact you",
+                "end": "soon to discuss your project."
+            },
+            "form": {
+                "firstName": {
+                    "label": "First Name",
+                    "placeholder": "Your first name"
+                },
+                "lastName": {
+                    "label": "Last Name",
+                    "placeholder": "Your last name"
+                },
+                "email": {
+                    "label": "Email",
+                    "placeholder": "Your email"
+                },
+                "phone": {
+                    "label": "Phone",
+                    "placeholder": "Your phone number"
+                },
+                "message": {
+                    "label": "Message",
+                    "placeholder": "Your message"
+                },
+                "terms": {
+                    "label": {
+                        "accept": "I accept",
+                        "conditions": "the Terms and Conditions"
+                    }
+                },
+                "submit": "Send Inquiry",
+                "errors": {
+                    "firstName": {
+                        "required": "First name is required",
+                        "min": "First name must be at least 2 characters long",
+                        "max": "First name cannot be longer than 50 characters"
+                    },
+                    "lastName": {
+                        "required": "Last name is required",
+                        "min": "Last name must be at least 2 characters long",
+                        "max": "Last name cannot be longer than 50 characters"
+                    },
+                    "email": {
+                        "required": "Email is required",
+                        "invalid": "Please enter a valid email address"
+                    },
+                    "phone": {
+                        "required": "Phone number is required",
+                        "invalid": "Please enter a valid phone number"
+                    },
+                    "message": {
+                        "required": "Message is required",
+                        "max": "Message cannot be longer than 1000 characters"
+                    },
+                    "terms": {
+                        "required": "You must accept the terms to submit the inquiry"
+                    }
+                },
+                "toast": {
+                    "success": {
+                        "title": "Inquiry sent successfully!",
+                        "description": "Thank you for contacting us. We will get back to you as soon as possible."
+                    },
+                    "error": {
+                        "title": "An error occurred!",
+                        "description": "Failed to send the inquiry. Please try again later."
+                    }
+                }
+            }
+        },
+        "Admin": {
+            "noPermission": {
+                "message": "Sorry, you do not have permission to access this section",
+                "goBack": "Go Back",
+                "logout": "Log Out"
+            },
+            "tabs": {
+                "login": "Login",
+                "register": "Register"
+            },
+            "forms": {
+                "auth": {
+                    "headerRegister": "Register Your Account",
+                    "headerLogin": "Log In to Your Account",
+                    "usingSocialNetworks": "Using social networks",
+                    "orWith": "Or with",
+                    "emailPlaceholder": "Enter your email here...",
+                    "passwordPlaceholder": "Enter your password here...",
+                    "confirmPasswordPlaceholder": "Confirm your password here...",
+                    "alreadyHaveAccount": "Already have an account?",
+                    "doNotHaveAccount": "Don't have an account?",
+                    "loginHere": "Log in here",
+                    "registerHere": "Register here",
+                    "submit": "Submit",
+                    "emailValidation": "Please enter a valid email address.",
+                    "passwordUppercaseError": "One uppercase letter",
+                    "passwordLowercaseError": "One lowercase letter",
+                    "passwordNumberError": "One number",
+                    "passwordSpecialCharacterError": "One special character",
+                    "passwordMinLengthError": "Minimum 8 characters",
+                    "passwordsMismatchError": "Passwords do not match",
+                    "toggleVisibility": "Toggle visibility",
+                    "errorMessage": "Error",
+                    "forgotPassword": "Forgot password?"
+                },
+                "articles": {
+                    "header": "Article Creation Form",
+                    "title": {
+                        "label": "Title",
+                        "placeholder": "Enter article title here..."
+                    },
+                    "heroImage": "Hero image URL",
+                    "titleDescriptions": {
+                        "label": "Title Descriptions",
+                        "placeholder": "Title description",
+                        "addButton": "Add title description",
+                        "removeButton": "Remove"
+                    },
+                    "descriptions": {
+                        "label": "Descriptions",
+                        "placeholder": "Description",
+                        "addButton": "Add description",
+                        "removeButton": "Remove"
+                    },
+                    "lists": {
+                        "label": "Lists",
+                        "listTitle": {
+                            "placeholder": "List title (optional)"
+                        },
+                        "items": {
+                            "placeholder": "List item",
+                            "addButton": "Add item",
+                            "removeButton": "Remove item"
+                        },
+                        "addButton": "Add list",
+                        "removeButton": "Remove list"
+                    },
+                    "docs": {
+                        "label": "Documents",
+                        "docTitle": {
+                            "label": "Document Title",
+                            "placeholder": "Document title"
+                        },
+                        "images": {
+                            "label": "Images",
+                            "placeholder": "Image URL",
+                            "addButton": "Add image",
+                            "removeButton": "Remove"
+                        },
+                        "texts": {
+                            "label": "Texts",
+                            "placeholder": "Text content",
+                            "addTextButton": "Add text",
+                            "addListButton": "Add list",
+                            "listItems": {
+                                "placeholder": "List item",
+                                "addButton": "Add list item",
+                                "removeButton": "Remove"
+                            },
+                            "listTitle": {
+                                "placeholder": "List title (optional)"
+                            },
+                            "removeButton": "Remove text"
+                        },
+                        "addButton": "Add document",
+                        "removeButton": "Remove document"
+                    },
+                    "submit": "Upload Article",
+                    "errors": {
+                        "heroImage": {
+                            "url": "Hero image must be a valid URL"
+                        },
+                        "title": {
+                            "required": "Title is required"
+                        },
+                        "titleDescriptions": {
+                            "value": {
+                                "required": "Each title description must have a value"
+                            }
+                        },
+                        "descriptions": {
+                            "value": {
+                                "required": "Each description must have a value"
+                            }
+                        },
+                        "lists": {
+                            "items": {
+                                "value": {
+                                    "required": "Each list item must have a value"
+                                },
+                                "min": "There must be at least one item in the list"
+                            }
+                        },
+                        "docs": {
+                            "title": {
+                                "required": "Document title is required"
+                            },
+                            "images": {
+                                "value": {
+                                    "url": "Each image must be a valid URL"
+                                }
+                            },
+                            "texts": {
+                                "value": {
+                                    "required": "Text content is required"
+                                },
+                                "listItems": {
+                                    "value": {
+                                        "required": "Each list item must have a value"
+                                    },
+                                    "min": "There must be at least one item in the list"
+                                }
+                            }
+                        }
+                    }
+                },
+                "adminCreate": {
+                    "title": "Create New Administrator",
+                    "email": {
+                        "label": "Email",
+                        "description": "The email address for this administrator account."
+                    },
+                    "password": {
+                        "label": "Password",
+                        "description": "Password must be at least 8 characters long and contain uppercase and lowercase letters, as well as numbers.",
+                        "placeholder": "Enter password here..."
+                    },
+                    "confirmPassword": {
+                        "label": "Confirm Password",
+                        "description": "Re-enter the password for confirmation.",
+                        "placeholder": "Confirm password here..."
+                    },
+                    "description": "Add a new administrator who will manage the website content.",
+                    "submit": "Create Administrator",
+                    "loading": "Creating administrator...",
+                    "errors": {
+                        "emailAlreadyInUse": "This email is already registered.",
+                        "weakPassword": "The password is too weak.",
+                        "invalidEmail": "Invalid email address.",
+                        "email": {
+                            "required": "Email is required",
+                            "invalid": "Please enter a valid email address"
+                        },
+                        "password": {
+                            "minLength": "Password must be at least 8 characters long",
+                            "uppercase": "Password must contain at least one uppercase letter",
+                            "lowercase": "Password must contain at least one lowercase letter",
+                            "number": "Password must contain at least one number"
+                        },
+                        "confirmPassword": {
+                            "mismatch": "Passwords do not match"
+                        }
+                    }
+                }
+            },
+            "preview": {
+                "title": "Article Preview",
+                "view": "View and manage all articles submitted through the form",
+                "filter": {
+                    "search": {
+                        "title": "Search by title...",
+                        "description": "Filter documents by title, description, or file name",
+                        "placeholder": "Search documents..."
+                    },
+                    "all": {
+                        "title": "All Documents",
+                        "description": "View all uploaded documents",
+                        "table": {
+                            "title": "Title",
+                            "file": "File",
+                            "type": "Type",
+                            "size": "Size",
+                            "uploaded": "Uploaded on",
+                            "actions": {
+                                "title": "Actions",
+                                "delete": "Delete",
+                                "deleting": "Deleting...",
+                                "cancel": "Cancel"
+                            }
+                        }
+                    },
+                    "noDocsFound": "No documents found."
+                },
+                "table": {
+                    "title": "Title",
+                    "heroImage": "Hero Image",
+                    "createdAt": "Created on",
+                    "actions": {
+                        "title": "Actions",
+                        "delete": "Delete",
+                        "cancel": "Cancel"
+                    },
+                    "alert": {
+                        "deleteTitle": "Delete Article",
+                        "deleteConfirm": "Are you sure you want to delete ",
+                        "deleteMessage": " This action cannot be undone."
+                    },
+                    "successDelete": "Article deleted successfully!"
+                },
+                "noArticlesFound": "No articles found. Create one using the article form."
+            },
+            "inquiries": {
+                "notFound": "No inquiries found",
+                "title": "Inquiries:",
+                "name": "Name:",
+                "email": "Email:",
+                "phone": "Phone:",
+                "message": "Message",
+                "delete": "Delete contact"
+            },
+            "logOut": "Log Out"
+        }
+    },
+    "Common": {
+        "Navigation": {
+            "about": "About",
+            "projects": "Projects",
+            "articles": "Articles",
+            "contact": "Contact",
+            "makeInquiry": "Make an Inquiry"
+        },
+        "Slider": {
+            "before": "Before",
+            "after": "After"
+        },
+        "Footer": {
+            "mondayToFriday": "Monday to Friday: 9:00 - 18:00",
+            "weekend": "Weekends – By appointment",
+            "areas": {
+                "title": "Service Areas",
+                "sofia": "Sofia",
+                "varna": "Varna",
+                "plovdiv": "Plovdiv",
+                "burgas": "Burgas",
+                "slanchevBryag": "Sunny Beach",
+                "zlatniPyasatsi": "Golden Sands",
+                "slanchevDen": "Sunny Day"
+            },
+            "rightsReserved": "Royal Decorators EOOD. All rights reserved."
+        },
+        "Outage": {
+            "message": "The website is currently under development. Please check back later."
+        }
+    }
 }
