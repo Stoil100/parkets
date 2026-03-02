@@ -67,7 +67,7 @@ export default async function LocaleLayout({ children, params }: Props) {
                         <AuthContextProvider>
                             <Toaster />
                             <Navigation />
-                            {children}
+                            <div className="pt-nav">{children}</div>
                             <Footer />
                         </AuthContextProvider>
                     </NextIntlClientProvider>

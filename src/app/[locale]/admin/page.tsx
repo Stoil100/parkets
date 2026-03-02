@@ -60,7 +60,7 @@ export default function Admin() {
     }
 
     return (
-        <section className="min-h-screen-nav pt-nav flex flex-col bg-white p-2 gap-2">
+        <section className="min-h-screen-nav flex flex-col bg-white p-2 gap-2">
             <div className="rounded-xl border p-4 shadow-sm">
                 <h3 className="mb-4 text-3xl font-semibold">
                     {t('forms.articles.header')}

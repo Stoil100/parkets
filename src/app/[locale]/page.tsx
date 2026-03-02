@@ -13,7 +13,7 @@ import { useTranslations } from 'next-intl';
 export default function HomePage() {
     const t = useTranslations('Pages.Home');
     return (
-        <main>
+        <main className="-mt-2">
             <HeroSection t={(key) => t(`Hero.${key}`)} />
             <ParallaxSection t={(key) => t(`Parallax.${key}`)} />
             <ConsultationSection t={(key) => t(`Consultation.${key}`)} />

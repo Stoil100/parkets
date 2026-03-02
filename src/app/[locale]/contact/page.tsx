@@ -7,7 +7,7 @@ import Image from 'next/image';
 export default function ContactPage() {
     const t = useTranslations('Pages.Contact');
     return (
-        <main className="min-h-screen-nav mt-nav bg-[#f5f5f5] flex flex-col items-center justify-center md:px-4 gap-10 py-8">
+        <main className="min-h-screen-nav bg-[#f5f5f5] flex flex-col items-center justify-center md:px-4 gap-10 py-8">
             <div className="w-full max-w-4xl text-center mb-8 ">
                 <h1 className="text-5xl md:text-6xl font-bold mb-4 text-[#1a1a1a]">
                     {t('title')}

@@ -55,7 +55,7 @@ export default function Articles() {
     }, []);
 
     return (
-        <main className="h-fit bg-background py-nav">
+        <main className="h-fit bg-background">
             <div className="container mx-auto px-4 py-12">
                 <h1 className="mb-8 text-center text-6xl font-bold tracking-tight text-balance underline decoration-4">
                     {t('title')}

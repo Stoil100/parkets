@@ -7,7 +7,10 @@ import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 
 type Props = {
-    params: { id: string };
+    params: {
+        locale: string;
+        id: string;
+    };
 };
 
 async function getArticle(id: string) {

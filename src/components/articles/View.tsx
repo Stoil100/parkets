@@ -37,7 +37,7 @@ export default function ArticleView({ article }: { article: ArticleT }) {
     );
 
     return (
-        <section className="flex min-h-screen pt-nav items-center justify-center bg-white px-2 py-6">
+        <section className="flex min-h-screen-nav items-center justify-center bg-white px-2 py-6">
             <div className="max-w-2xl space-y-6">
                 <h1 className="text-5xl">{article!.title}</h1>
                 <div className="space-y-2 px-2">
@@ -140,10 +140,10 @@ export default function ArticleView({ article }: { article: ArticleT }) {
                                                             </DialogTitle>
                                                             <Carousel
                                                                 className="max-w-3xl 2xl:max-w-7xl"
-                                                                style={{
-                                                                    marginTop:
-                                                                        'var(--nav-height)',
-                                                                }}
+                                                                // style={{
+                                                                //     marginTop:
+                                                                //         'var(--nav-height)',
+                                                                // }}
                                                                 setApi={setApi}
                                                                 opts={{
                                                                     watchDrag: false,
