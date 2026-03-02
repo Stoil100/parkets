@@ -1,5 +1,3 @@
-// app/[locale]/articles/[id]/page.tsx
-
 import ArticleView from '@/components/articles/View';
 import { db } from '@/firebase/config';
 import serializeTimestamps from '@/firebase/utils/serializer';
@@ -23,9 +21,10 @@ async function getArticle(id: string) {
 export async function generateMetadata({
     params,
 }: {
-    params: { locale: string; id: string };
+    params: Promise<{ id: string }>;
 }): Promise<Metadata> {
-    const article = await getArticle(params.id);
+    const { id } = await params;
+    const article = await getArticle(id);
 
     if (!article) {
         return {
