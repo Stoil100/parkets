@@ -1,3 +1,5 @@
+// app/[locale]/articles/[id]/page.tsx
+
 import ArticleView from '@/components/articles/View';
 import { db } from '@/firebase/config';
 import serializeTimestamps from '@/firebase/utils/serializer';
@@ -5,13 +7,6 @@ import { ArticleT } from '@/models/article';
 import { doc, getDoc } from 'firebase/firestore';
 import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
-
-type Props = {
-    params: {
-        locale: string;
-        id: string;
-    };
-};
 
 async function getArticle(id: string) {
     const ref = doc(db, 'articles', id);
@@ -25,7 +20,11 @@ async function getArticle(id: string) {
     } as ArticleT);
 }
 
-export async function generateMetadata({ params }: Props): Promise<Metadata> {
+export async function generateMetadata({
+    params,
+}: {
+    params: { locale: string; id: string };
+}): Promise<Metadata> {
     const article = await getArticle(params.id);
 
     if (!article) {
@@ -46,8 +45,13 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     };
 }
 
-export default async function ArticlePage({ params }: Props) {
-    const article = await getArticle(params.id);
+export default async function ArticleIdPage({
+    params,
+}: {
+    params: Promise<{ id: string }>;
+}) {
+    const { id } = await params;
+    const article = await getArticle(id);
 
     if (!article) {
         notFound();
